@@ -200,7 +200,7 @@ class LinuxAppImageBuildCommand(LinuxAppImageMixin, BuildCommand):
                             )
                         ),
                         "-o", "appimage",
-                    ] + deploy_deps_args,
+                    ] #+ deploy_deps_args,
                     env=env,
                     check=True,
                     cwd=str(self.platform_path)
